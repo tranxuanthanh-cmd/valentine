@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Các CSS khác của bạn ở dưới này... */
+:root {
+  --primary: #ff4d6d;
+  --bg: #fff0f3;
+  --card-bg: #ffffff;
+  --text: #590d22;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #ff4d6d, #ff758f);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.btn-primary:active { transform: scale(0.95); }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #fff0f3; }
+::-webkit-scrollbar-thumb { background: #ffccd5; border-radius: 4px; }
